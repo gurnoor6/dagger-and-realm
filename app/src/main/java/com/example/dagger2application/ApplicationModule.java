@@ -11,9 +11,4 @@ public class ApplicationModule {
     Realm providesRealm(){
         return Realm.getDefaultInstance();
     }
-
-    @Provides
-    RealmService provideRealmService(final Realm realm){
-        return new RealmService(realm);
-    }
 }
